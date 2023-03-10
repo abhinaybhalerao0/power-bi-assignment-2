@@ -1,0 +1,37 @@
+Explain the advantages of Natural Queries in PowerBi with an example?
+
+1-Explain Web Front End(WFE) cluster from Power BI Service Architecture?
+###The WFE cluster manages the initial connection and authentication to the Power BI service.
+
+The WFE cluster uses Azure AD to authenticate clients, and provide tokens for subsequent client connections to the Power BI service. Power BI uses the Azure Traffic Manager (Traffic Manager) to direct user traffic to the nearest datacenter. Traffic Manager directs requests using the DNS record of the client attempting to connect, authenticate, and to download static content and files. Power BI uses the Azure Content Delivery Network (CDN) to efficiently distribute the necessary static content and files to users based on geographical locale.
+
+
+
+2-Explain Back End cluster from Power BI Service Architecture?
+###Once authenticated, the Back-End handles all subsequent user interactions.
+
+The Back-End cluster determines how authenticated clients interact with the Power BI service. The Back-End cluster manages visualizations, user dashboards, datasets, reports, data storage, data connections, data refresh, and other aspects of interacting with the Power BI service. The Gateway Role acts as a gateway between user requests and the Power BI service. Users don't interact directly with any roles other than the Gateway Role. Azure API Management eventually handles the Gateway Role.
+
+
+
+3-What ASP.NET component does in Power BI Service Architecture?
+
+4-Compare Microsoft Excel and PowerBi Desktop on the following features:
+Data import
+Data transformation
+Modeling
+Reporting
+Server Deployment
+Convert Models
+Cost
+
+
+
+
+
+4-List 20 data sources supported by Power Bi desktop.
+###File---- Excel, XML, Text/CSV, JSON, PDF, Folder, SharePoint folder
+Database----SQL, IBM, SAP HANA, Access, MySQL, Google BigQuery, Actian (Beta), Oracle, Denodo, Dremio, Exasol, Snowflake, SQL Server Analysis Services database, and many more popular databases
+Power Platform Power BI datasets, Power BI dataflows, Power Platform dataflows (Beta), Microsoft Dataverse
+
+
